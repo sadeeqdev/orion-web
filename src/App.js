@@ -4,6 +4,7 @@ import ScrollToTop from "./components/ScrollTop";
 import Home from "./pages/home/Home";
 import Navbar from './components/navabar/Navbar';
 import Footer from './components/footer/Footer';
+import TokenClaim from './pages/tokenClaim/TokenClaim';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/tokenclaim" element={<TokenClaim />} />
         </Routes>
         <Footer/>
       </ScrollToTop>

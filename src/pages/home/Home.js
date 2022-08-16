@@ -32,7 +32,7 @@ const Home = () => {
                         protocols launching on Aptos to use as a
                         strategic Partner for a raise through a decentralized network.
                     </p>
-                    <button className='border border-greentext px-40 py-4 mt-12 hover:bg-greentext'>LAUNCH APP</button>
+                    <button className='border border-greentext px-40 py-4 mt-12 hover:bg-greentext transition-all'>LAUNCH APP</button>
                 </div>
                 <div className='flex lg:w-1/1 2xl:w-4/6   float-right justify-end'>
                     <img src={Glossy} alt="Logo" width="100%"/>

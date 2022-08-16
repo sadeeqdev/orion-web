@@ -11,7 +11,7 @@ const Navbar = () => {
             </div>
             <div className='flex space-x-8 font-medium'>
                 <NavLink to="/home" className="hover:text-greentext" >Home</NavLink>
-                <NavLink to="/home" className="hover:text-greentext">Token Claim</NavLink>
+                <NavLink to="/tokenclaim" className="hover:text-greentext">Token Claim</NavLink>
                 <NavLink to="/home" className="hover:text-greentext">IDO Pool</NavLink>
                 <NavLink to="/home" className="hover:text-greentext">Farm</NavLink>
             </div>
