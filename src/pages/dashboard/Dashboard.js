@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import SideBar from "../../components/sidebar/SideBar"
+import TopBar from "../../components/topBar/TopBar"
 
 const Dashboard = ({handleNavbar}) => {
 
@@ -8,8 +9,11 @@ const Dashboard = ({handleNavbar}) => {
     }) 
 
   return (
-    <div>
+    <div className="flex">
         <SideBar/>
+        <div className="max-w" style={{width:'100%'}}>
+            <TopBar/>
+        </div>
     </div>
   )
 }

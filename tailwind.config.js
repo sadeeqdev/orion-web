@@ -17,6 +17,7 @@ module.exports = {
       'dark':'#1C1A1A',
       'sub-dark': '#222020',
       'navbar':'#030202',
+      'btn-dark':'#121010',
       'footer': '#4E4B4B',
       'greenshadow': 'rgba(182, 250, 215, 0.21);',
       'blueshadow': 'rgba(182, 250, 215, 0.21);',
