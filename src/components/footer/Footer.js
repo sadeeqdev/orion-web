@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import orionLogo from '../../assets/img/Orion.svg'
 
-const Navbar = () => {
+const Footer = () => {
   return (
     <div className='bg-navbar'>
         <div className=' text-white pt-28 py-7 w-5/6 2xl:w-4/6 mx-auto flex justify-between'>
@@ -23,4 +23,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Footer

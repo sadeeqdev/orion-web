@@ -6,16 +6,21 @@ module.exports = {
   theme: {
     colors: {
       'white': '#fff',
+      'black': '#000',
       'sub-white':'#D9D9D9',
       'green': '#06BC5F',
       'activeclass': '#06BC5F',
       'blue': '#25C8EB',
-      'yello': '#F0B90B',
+      'yellow': '#F0B90B',
       'greentext': '#0E9E55',
       'grey': '#D9D9D9',
       'dark':'#1C1A1A',
       'sub-dark': '#222020',
-      'navbar':'#030202'
+      'navbar':'#030202',
+      'footer': '#4E4B4B',
+      'greenshadow': 'rgba(182, 250, 215, 0.21);',
+      'blueshadow': 'rgba(182, 250, 215, 0.21);',
+      'yellowshadow':'rgba(182, 250, 215, 0.21);'
     },
     extend: {},
   },
