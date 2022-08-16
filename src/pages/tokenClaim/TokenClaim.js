@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import LaptopImg from '../../assets/img/Laptop-1.png'
 
-const TokenClaim = () => {
+const TokenClaim = ({handleNavbar}) => {
+
+    useEffect(() => {
+        handleNavbar(true)
+    })
+
   return (
     <>
         <div className="w-5/6 2xl:w-4/6 mx-auto text-white">

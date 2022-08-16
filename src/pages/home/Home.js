@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Glossy from '../../assets/img/Glossy .png'
 import People from '../../assets/img/People-1.png'
 import ChartPie from '../../assets/img/NBcharts-PIE.svg'
@@ -15,7 +15,11 @@ const features = [
     {"header": "Waitlist of new and innovative projects on Aptos", "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus et blandit nisi habitasse mauris, ac elit tortor viverra. Urna.", "img": SecurityLock},
 ]
 
-const Home = () => {
+const Home = ({handleNavbar}) => {
+
+    useEffect(() => {
+        handleNavbar(true)
+    })
   return (
     <>
         <div className="w-5/6 2xl:w-4/6 mx-auto text-white">
