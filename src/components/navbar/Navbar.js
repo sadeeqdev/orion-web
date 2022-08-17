@@ -1,10 +1,49 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import orionLogo from '../../assets/img/Orion.svg'
+import Menu from '../../assets/img/Menu-2.png'
+
 
 const Navbar = () => {
+    const [show, setShow] = useState(false);
+    const [mobile, setMobile] = useState(false)
+
+    function handleShow(){
+        setShow(!show)
+    }
+
+    function checkWindow(){
+        if(window.innerWidth > 800 ){
+            setShow(true)
+            setMobile(false)
+        }else if(window.innerWidth < 800 ){
+            setShow(false)
+            setMobile(true)
+        }
+    }
+
+    window.onresize = checkWindow
+
   return (
     <div className='bg-navbar'>
+        <div className='fixed w-72 -ml-72 bg-sub-dark h-full transition-all' style={{zIndex:999, transform:(mobile && show)  && 'translateX(288px)'}}>
+            <div className=' text-white pt-12 pb-7 w-11/12  lg:pt-28 lg:py-7 lg:w-5/6 2xl:w-4/6 mx-auto grid grid-cols-1 place-items-center justify-between'>
+                <div>
+                    <img src={orionLogo} alt="Logo"/>
+                </div>
+                <div className='font-medium grid text-xl gap-y-5 mt-9 text-center'>
+                    <NavLink to="/home" className="hover:text-greentext" >Home</NavLink>
+                    <NavLink to="/tokenclaim" className="hover:text-greentext">Token Claim</NavLink>
+                    <NavLink to="/home" className="hover:text-greentext">IDO Pool</NavLink>
+                    <NavLink to="/home" className="hover:text-greentext">Farm</NavLink>
+                </div>
+                <div className="">
+                    <Link to="/dashboard">
+                        <button className='border border-greentext px-16 py-2 mt-9 hover:bg-greentext'>LAUNCH APP</button>
+                    </Link>
+                </div>
+            </div>
+        </div>
         <div className=' text-white pt-12 pb-7 w-11/12  lg:pt-28 lg:py-7 lg:w-5/6 2xl:w-4/6 mx-auto flex justify-between'>
             <div>
                 <img src={orionLogo} alt="Logo"/>
@@ -19,6 +58,11 @@ const Navbar = () => {
                 <Link to="/dashboard">
                     <button className='border border-greentext px-11 py-1 hover:bg-greentext'>LAUNCH APP</button>
                 </Link>
+            </div>
+             <div className='mt-0 flex lg:hidden' style={{position:'absolute', right:0}}>
+                <button onClick={handleShow}>
+                    <img src={Menu} width="50%" alt="Menu"/>
+                </button>
             </div>
         </div>
     </div>

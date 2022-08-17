@@ -31,7 +31,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='lg:flex lg:justify-between pb-8 space-y-3'>
+            <div className='lg:flex lg:justify-between pb-8 space-y-3 lg:space-y-0'>
                 <p>
                     Orion © 2022 All rights reserved
                 </p>
