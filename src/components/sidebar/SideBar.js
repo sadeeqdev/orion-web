@@ -27,8 +27,8 @@ const SideBar = () => {
                 <button className='border border-greentext py-2 px-5 text-left hover:bg-greentext mt-2' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>Apply for IDO</button>
             </div>
         </div>
-        <div className='w-80 2xl:w-96 py-8 bg-dashFooter flex justify-center self-bottom'>
-            <div className='space-x-10 flex mt-5'>
+        <div className='w-80 2xl:w-96 py-8 px-10 bg-dashFooter flex justify-center self-bottom'>
+            <div className='space-x-9 flex mt-5'>
                 <NavLink to="/home" className="hover:scale-110" >
                     <img src={Email} alt="Logo"/>
                 </NavLink>
