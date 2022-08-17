@@ -11,10 +11,12 @@ const Dashboard = ({handleNavbar}) => {
 
   return (
     <div className="flex h-max">
-        <SideBar/>
-        <div className="max-w ml-80 2xl:ml-96" style={{width:'100%'}}>
+        <div className="hidden lg:flex">
+          <SideBar />
+        </div>
+        <div className="max-w lg:ml-80 2xl:ml-96" style={{width:'100%'}}>
             <TopBar/>
-            <div className="mt-16 ml-20 w-full  rounded-2xl shadow-xl bg-sub-dark pt-9 pl-9 pr-28 pb-20">
+            <div className="mt-16 lg:ml-20 w-full px-4 lg:px-0 lg:rounded-2xl lg:shadow-xl lg:bg-sub-dark pt-9 lg:pl-9 lg:pr-28 pb-20">
                 <Outlet/>
             </div>
         </div>

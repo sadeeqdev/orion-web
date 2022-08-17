@@ -9,7 +9,7 @@ import OrionBg from '../../assets/img/CircleBorder.svg'
 
 const LiveBox = () => {
   return (
-    <div className='bg-dark shadow-xl p-7 text-white' 
+    <div className='bg-dark shadow-xl px-3 py-5 lg:py-7 lg:px-7 text-white' 
         style={{
             background:'linear-gradient(320.78deg, rgba(244, 243, 243, 0.2) -36.37%, rgba(244, 243, 243, 0) 101.8%)', 
             filter: 'drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.4))', 
@@ -17,7 +17,7 @@ const LiveBox = () => {
             borderImage: 'linear-gradient(90deg, black, white)',
             border: '1px solid transparent'
         }}>
-        <div className='flex justify-between px-14'>
+        <div className='flex justify-between px-4 lg:px-14'>
             <p className='text-white text-xl mt-2 '>
                 Ended
             </p>
@@ -48,12 +48,12 @@ const LiveBox = () => {
                 </div>
             </div>
         </div>
-        <div className='px-10'>
+        <div className='px-3 lg:px-10'>
             <p className='flex justify-center mt-4 text-lg'>Contribution Range</p>
-            <div className='flex justify-between mt-2'>
-                <button className='border border-greentext py-2 px-10 text-left hover:bg-greentext mt-2' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}> 100 APTOS</button>
+            <div className='flex justify-between mt-2 space-x-4'>
+                <button className='w-full lg:w-auto border border-greentext py-2 lg:px-10 text-center hover:bg-greentext mt-2' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}> 100 APTOS</button>
                     <p className='items-center flex text-lg'>To</p>
-                <button className='border border-greentext py-2 px-10 text-left hover:bg-greentext mt-2 ml-3' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>1000 APTOS</button>
+                <button className='w-full lg:w-auto border border-greentext py-2 lg:px-10 text-center hover:bg-greentext mt-2 ml-3' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>1000 APTOS</button>
             </div>
         </div>
     </div>

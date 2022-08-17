@@ -17,7 +17,7 @@ const Navbar = () => {
             </div>
             <div className="hidden lg:flex">
                 <Link to="/dashboard">
-                    <button className='border border-greentext px-9 py-1 hover:bg-greentext'>LAUNCH APP</button>
+                    <button className='border border-greentext px-11 py-1 hover:bg-greentext'>LAUNCH APP</button>
                 </Link>
             </div>
         </div>
