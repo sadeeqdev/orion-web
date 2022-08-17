@@ -7,8 +7,6 @@ import Meduim from '../../assets/img/Medium Monogram.svg'
 import Twitter from '../../assets/img/Twitter .svg'
 import Star from '../../assets/img/Star.svg'
 
-
-
 const UpcomingBar = () => {
   return (
     <div className='bg-dark shadow-xl p-7 text-white' 

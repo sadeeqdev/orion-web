@@ -14,6 +14,7 @@ module.exports = {
       'yellow': '#F0B90B',
       'greentext': '#0E9E55',
       'grey': '#D9D9D9',
+      'liveborder':'#7C7C7C',
       'dark':'#1C1A1A',
       'sub-dark': '#222020',
       'navbar':'#030202',
