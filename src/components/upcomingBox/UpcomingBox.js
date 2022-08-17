@@ -19,7 +19,7 @@ const UpcomingBar = () => {
         }}>
         <div className='flex'>
             <div className='h-32 w-32 rounded-full border border-greentext flex items-center justify-center p-6'>
-                <img src={OrionDark} alt="Orion"/>
+                <img src={OrionDark} alt="Orion" />
             </div>
             <div className='ml-11 w-2/5 mt-2'>
                 <h2 className='text-white font-bold text-3xl'>Orion</h2>

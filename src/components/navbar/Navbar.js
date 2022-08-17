@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import orionLogo from '../../assets/img/Orion.svg'
 
 const Navbar = () => {
@@ -16,7 +16,9 @@ const Navbar = () => {
                 <NavLink to="/home" className="hover:text-greentext">Farm</NavLink>
             </div>
             <div>
-                <button className='border border-greentext px-9 py-1 hover:bg-greentext'>LAUNCH APP</button>
+                <Link to="/dashboard">
+                    <button className='border border-greentext px-9 py-1 hover:bg-greentext'>LAUNCH APP</button>
+                </Link>
             </div>
         </div>
     </div>

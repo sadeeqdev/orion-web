@@ -1,5 +1,5 @@
 import React from 'react'
-import UpcomingBar from '../../components/upcoming/Upcoming'
+import UpcomingBar from '../../components/upcomingBox/UpcomingBox'
 
 const Upcoming = () => {
   return (

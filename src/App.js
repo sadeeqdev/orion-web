@@ -7,6 +7,8 @@ import Footer from './components/footer/Footer';
 import TokenClaim from './pages/tokenClaim/TokenClaim';
 import Dashboard from './pages/dashboard/Dashboard';
 import { useState } from 'react';
+import Live from './pages/live/Live';
+import Upcoming from './pages/upcoming/Upcoming';
 
 function App() {
 
@@ -21,10 +23,14 @@ function App() {
       <ScrollToTop>
         {showNavbar &&  <Navbar /> }
         <Routes>
-          <Route path="/" element={<Dashboard handleNavbar={handleNavbar} />} />
+          <Route path="/" element={<Home handleNavbar={handleNavbar} />} />
           <Route path="/home" element={<Home handleNavbar={handleNavbar} />} />
           <Route path="/tokenclaim" element={<TokenClaim handleNavbar={handleNavbar} />} />
-          <Route path="/dashboard" element={<Dashboard handleNavbar={handleNavbar} />} />
+          <Route path="/dashboard" element={<Dashboard handleNavbar={handleNavbar} />} >
+            <Route index element={<Live/>} />
+            <Route path="live" element={<Live/>} />
+            <Route path="upcoming" element={<Upcoming/>} />
+          </Route>
         </Routes>
         { showNavbar && <Footer/> }
       </ScrollToTop>

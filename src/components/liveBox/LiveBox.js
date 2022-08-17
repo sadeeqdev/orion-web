@@ -25,7 +25,7 @@ const LiveBox = () => {
         </div>
         <div className='flex justify-between'>
             <div className='h-48 w-48 rounded-full flex items-center justify-center p-14 ' style={{backgroundImage:`url(${OrionBg})`, backgroundPosition:'center'}}>
-                <img src={OrionDark} alt="Orion"/>
+                <img src={OrionDark} alt="Orion" className='ml-1.5 mt-0.5'/>
             </div>
             <div className=' w-2/4 flex justify-end mt-2'>
                 <div>
