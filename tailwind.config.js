@@ -21,7 +21,8 @@ module.exports = {
       'footer': '#4E4B4B',
       'greenshadow': 'rgba(182, 250, 215, 0.21);',
       'blueshadow': 'rgba(182, 250, 215, 0.21);',
-      'yellowshadow':'rgba(182, 250, 215, 0.21);'
+      'yellowshadow':'rgba(182, 250, 215, 0.21);',
+      'dashFooter': '#555555'
     },
     extend: {},
   },
