@@ -3,7 +3,6 @@ import { Link, NavLink } from 'react-router-dom'
 import orionLogo from '../../assets/img/Orion.svg'
 import Menu from '../../assets/img/Menu-2.png'
 
-
 const Navbar = () => {
     const [show, setShow] = useState(false);
     const [mobile, setMobile] = useState(false)

@@ -3,7 +3,7 @@ import UpcomingBar from '../../components/upcomingBox/UpcomingBox'
 
 const Upcoming = () => {
   return (
-    <div className="grid grid-cols-1 gap-y-6 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-8">
+    <div className="grid grid-cols-1 gap-y-6 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-8" data-aos="fade-left">
         <UpcomingBar/>
         <UpcomingBar/>
         <UpcomingBar/>

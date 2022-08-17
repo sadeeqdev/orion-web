@@ -6,11 +6,18 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import TokenClaim from './pages/tokenClaim/TokenClaim';
 import Dashboard from './pages/dashboard/Dashboard';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Live from './pages/live/Live';
 import Upcoming from './pages/upcoming/Upcoming';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 function App() {
+
+    useEffect(() => {
+      AOS.init();
+      AOS.refresh();
+    }, []);
 
   const [showNavbar, setShowNavbar] = useState('')
 

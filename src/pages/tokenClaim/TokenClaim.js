@@ -9,7 +9,7 @@ const TokenClaim = ({handleNavbar}) => {
 
   return (
     <>
-        <div className="w-1/1 lg:w-5/6 2xl:w-4/6 mx-auto text-white">
+        <div className="w-1/1 lg:w-5/6 2xl:w-4/6 mx-auto text-white" data-aos="fade-left">
             <div className='py-12 lg:py-32 flex flex-col-reverse lg:flex-row lg:justify-between'>
                 <div className='w-11/12 mx-auto lg:w-4/5 lg:mx-0'>
                     <h2 className='text-5xl  lg:text-6xl font-bold capitalize'>
@@ -25,7 +25,7 @@ const TokenClaim = ({handleNavbar}) => {
                     </p>
                     <button className='border border-greentext w-full lg:px-40 py-4 shadow-md shadow-greenshadow mt-12 hover:bg-greentext transition-all'>CLAIM</button>
                 </div>
-                <div className='flex py-5 lg:py-12 lg:w-1/1 2xl:w-4/6 lg:-mt-20  lg:float-right lg:justify-end'>
+                <div className='flex py-5 lg:py-12 lg:w-1/1 2xl:w-4/6 lg:-mt-20  lg:float-right lg:justify-end' data-aos="fade-up">
                     <img src={LaptopImg} alt="Logo" width="100%"/>
                 </div>
             </div>
