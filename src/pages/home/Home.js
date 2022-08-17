@@ -22,13 +22,13 @@ const Home = ({handleNavbar}) => {
     })
   return (
     <>
-        <div className="w-5/6 2xl:w-4/6 mx-auto text-white">
-            <div className='pt-20 flex justify-between'>
-                <div className='w-4/5'>
-                    <h2 className='text-8xl font-bold'>
+        <div className="w-11/12 lg:w-5/6 2xl:w-4/6 mx-auto text-white">
+            <div className='pt-20 grid grid-cols-1 lg:flex lg:justify-between'>
+                <div className='w-10/11 lg:w-4/5'>
+                    <h2 className='text-5xl lg:text-8xl font-bold'>
                         Premier Fundraising Platform 
                     </h2>
-                    <p className='text-xl mt-9 w-4/5'>
+                    <p className='text-xl mt-9 w-full lg:w-4/5 mx-auto'>
                         Orion is a Premier Fundraising Platfrom
                         being developed on the new scalable L1
                         Chain called Aptos.
@@ -36,28 +36,28 @@ const Home = ({handleNavbar}) => {
                         protocols launching on Aptos to use as a
                         strategic Partner for a raise through a decentralized network.
                     </p>
-                    <button className='border border-greentext px-40 py-4 mt-12 hover:bg-greentext transition-all'>LAUNCH APP</button>
+                    <button className='border border-greentext w-full py-3 lg:w-auto lg:px-40 lg:py-4 mt-12 hover:bg-greentext transition-all'>LAUNCH APP</button>
                 </div>
-                <div className='flex lg:w-1/1 2xl:w-4/6   float-right justify-end'>
+                <div className='flex w-10/12 lg:w-1/1 2xl:w-4/6 mt-12 mx-auto justify-center lg:mt-0  lg:float-right lg:justify-end'>
                     <img src={Glossy} alt="Logo" width="100%"/>
                 </div>
             </div>
-            <div className='mt-16 flex justify-between '>
-                <button className='px-32 2xl:px-40 py-4 mt-12 bg-green shadow-md shadow-greenshadow'>LAUNCH APP</button>
-                <button className='px-32 2xl:px-40 py-4 mt-12 bg-blue shadow-md shadow-blueshadow'>LAUNCH APP</button>
-                <button className='px-32 2xl:px-40 py-4 mt-12 bg-yellow shadow-md shadow-yellowshadow'>LAUNCH APP</button>
+            <div className='mt-16 w-1/1 grid grid-cols-1 lg:flex lg:justify-between '>
+                <button className='w-full px-0 lg:w-auto lg:px-32 2xl:px-40 py-4 mt-12 bg-green shadow-md shadow-greenshadow'>LAUNCH APP</button>
+                <button className='w-full px-0 lg:px-32 2xl:px-40 py-4 mt-12 bg-blue shadow-md shadow-blueshadow'>LAUNCH APP</button>
+                <button className='px-0 lg:px-32 2xl:px-40 py-4 mt-12 bg-yellow shadow-md shadow-yellowshadow'>LAUNCH APP</button>
             </div>
         </div>
         <div className='mt-32 text-white'>
-            <h2 className='text-6xl text-center font-bold'>Vision Of Orion</h2>
-            <div className='mt-9 w-1/1 h-80 bg-sub-dark shadow-xl'>
-                <div className='w-5/6 2xl:w-4/6 mx-auto text-white flex justify-between'>
-                    <div>
+            <h2 className='text-6xl text-center font-bold '>Vision Of Orion</h2>
+            <div className='mt-9 w-1/1 lg:h-80 pb-10 lg:pb-0 bg-sub-dark shadow-xl'>
+                <div className='w-11/12 lg:w-5/6 2xl:w-4/6 mx-auto text-white grid grid-cols-1 lg:flex lg:justify-between'>
+                    <div className='mt-5 lg:mt-none'>
                         <img src={People} alt="Logo" width="100%" style={{marginTop:'-70px'}}/>
                     </div>
-                    <div className='flex float-right mt-12 justify-end'>
+                    <div className='flex float-right lg:mt-12 justify-end'>
                         <div>
-                        <p className='w-4/5 text-right float-right'>
+                        <p className='w-11/12 text-left mx-auto lg:w-4/5 lg:text-right lg:float-right'>
                             Orion aims to be the main launchpad
                             and incubator Partner on Aptos by
                             leveraging the first mover advantage
@@ -67,14 +67,14 @@ const Home = ({handleNavbar}) => {
                             of unique and ecosystem evolving projects that
                             push Aptos to further heights
                         </p>
-                        <button className='px-32 2xl:px-40 py-4 mt-9 bg-grey text-black font-bold text-xl shadow-md float-right'>LAUNCH APP</button>
+                        <button className='w-full lg:w-auto px-2 lg:px-32 2xl:px-40 py-4 mt-9 bg-grey text-black font-bold text-xl shadow-md float-right'>LAUNCH APP</button>
                         </div>  
                     </div>
                 </div>
             </div>
         </div>
         <div className='w-5/6 2xl:w-4/6 mx-auto my-32'>
-            <div className='flex justify-between'>
+            <div className='grid grid-cols-1 gap-y-8 lg:flex lg:justify-between'>
                 <Stakebox/>
                 <Stakebox/>
                 <Stakebox/>
@@ -83,7 +83,7 @@ const Home = ({handleNavbar}) => {
 
             <div className='mt-32 '>
                 <h2 className='text-white  font-bold text-5xl text-center'>Token Distribution</h2>
-                <div className='bg-dark mt-16 max-w px-12 py-16 flex justify-between' style={{boxShadow:'0px 4px 35px rgba(0, 0, 0, 0.4)'}}>
+                <div className='bg-dark mt-16 max-w px-12 py-16 grid grid-cols-1 lg:flex lg:justify-between' style={{boxShadow:'0px 4px 35px rgba(0, 0, 0, 0.4)'}}>
                     <div className=''>
                         <div>
                             <p className='text-green text-xl'>Token Name - <span className='font-medium'>$Orion</span></p>
@@ -104,12 +104,12 @@ const Home = ({handleNavbar}) => {
                             <li>Airdrop - 1%</li>
                         </ul>
                     </div>
-                    <div className='flex items-start -mt-24'>
+                    <div className='flex items-start mt-0 lg:-mt-24'>
                         <img src={ChartPie} alt="" width="100%"/>
                     </div>
                 </div>
             </div>
-             <div className='flex justify-between mt-40 space-x-16'>
+             <div className='grid grid-cols-1 gap-y-16 lg:flex lg:justify-between mt-40 lg:space-x-16'>
                 {features.map((feature, index) => (
                     <FeatureBox key={index} image={feature.img} header={feature.header} content={feature.content} />
                 ))}
@@ -118,12 +118,12 @@ const Home = ({handleNavbar}) => {
         </div>
         <div className='mt-32 '>
             <h2 className='text-white font-bold text-5xl text-center'>Road Map</h2>
-            <div className='mt-10' style={{background: 'linear-gradient(280.99deg, rgba(217, 217, 217, 0.15) 18.55%, rgba(217, 217, 217, 0) 95.81%)'}}>
-                <div className='w-5/6 2xl:w-4/6 space-x-10 mx-auto flex justify-between'>
+            <div className='mt-10 pb-16 lg:pb-0' style={{background: 'linear-gradient(280.99deg, rgba(217, 217, 217, 0.15) 18.55%, rgba(217, 217, 217, 0) 95.81%)'}}>
+                <div className='w-5/6 2xl:w-4/6 space-x-10 mx-auto grid grid-cols-1 lg:flex lg:justify-between'>
                     <div className='w-2/4'>
-                        <img src={RobotImg} alt="" width="100%" className='-mt-20 -ml-5'/>
+                        <img src={RobotImg} alt="" width="100%" className='-mt-6 lg:-mt-20 -ml-5 '/>
                     </div>
-                    <ul className='font-medium text-2xl text-white list-disc mt-20'>
+                    <ul className='font-medium text-2xl text-white list-disc mt-7 lg:mt-20'>
                         <li>
                         Market Study
                         </li>
