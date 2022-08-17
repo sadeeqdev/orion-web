@@ -5,6 +5,10 @@ import Discord from '../../assets/img/Discord New.svg'
 import Email from '../../assets/img/Email Send.svg'
 import Github from '../../assets/img/GitHub.svg'
 import Twitter from '../../assets/img/Twitter.svg'
+import Downloads from '../../assets/img/Downloads Folder.svg'
+import Gold from '../../assets/img/Gold Bars.svg'
+import Layers from '../../assets/img/Layers.svg'
+import Document from '../../assets/img/Sign Document.svg'
 
 const SideBar = () => {
   return (
@@ -19,12 +23,12 @@ const SideBar = () => {
                 <button className='bg-green py-2 hover:bg-greentext' style={{boxShadow:'0px 4px 9px rgba(6, 188, 95, 0.56), inset 0px 4px 20px rgba(182, 250, 215, 0.5)'}}>Total Participants: 0</button>
             </div>
             <div className='gap-y-2 w-full grid grid-cols-1'>
-                <button className='border w-full border-green bg-btn-dark py-2 px-5 text-left hover:bg-greentext' style={{boxShadow:'0px 4px 9px rgba(6, 188, 95, 0.56)'}}>IDO</button>
-                <button className='border border-greentext py-2 px-5 text-left hover:bg-greentext mt-4' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>$Orion Staking</button>
+                <button className='border w-full border-green bg-btn-dark py-2 px-5 text-left hover:bg-greentext flex justify-between' style={{boxShadow:'0px 4px 9px rgba(6, 188, 95, 0.56)'}}><span>IDO</span><img src={Layers} alt="Icon" className='mt-1'/></button>
+                <button className='border border-greentext py-2 px-5 text-left hover:bg-greentext mt-4 flex justify-between' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>$Orion Staking<img src={Gold} alt="Icon" className='mt-1'/></button>
             </div>
             <div className='gap-y-2 w-full grid grid-cols-1'>
-                <button className='border border-greentext py-2 px-5 text-left hover:bg-greentext' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>Doc</button>
-                <button className='border border-greentext py-2 px-5 text-left hover:bg-greentext mt-2' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>Apply for IDO</button>
+                <button className='border border-greentext py-2 px-5 text-left hover:bg-greentext flex justify-between' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>Doc<img src={Document} alt="Icon" className='mt-1'/></button>
+                <button className='border border-greentext py-2 px-5 text-left hover:bg-greentext mt-2 flex justify-between' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>Apply for IDO <img src={Downloads} alt="Icon" className='mt-1'/></button>
             </div>
         </div>
         <div className='w-80 2xl:w-96 py-8 px-10 bg-dashFooter flex justify-center self-bottom'>
