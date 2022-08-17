@@ -84,6 +84,9 @@ const Home = ({handleNavbar}) => {
             <div className='mt-32 '>
                 <h2 className='text-white  font-bold text-5xl text-center'>Token Distribution</h2>
                 <div className='bg-dark mt-16 max-w px-12 py-16 grid grid-cols-1 lg:flex lg:justify-between' style={{boxShadow:'0px 4px 35px rgba(0, 0, 0, 0.4)'}}>
+                    <div className='flex justify-center mb-10 -mt-12 lg:hidden'>
+                        <img src={ChartPie} alt="" width="50%"/>
+                    </div>
                     <div className=''>
                         <div>
                             <p className='text-green text-xl'>Token Name - <span className='font-medium'>$Orion</span></p>
@@ -91,7 +94,7 @@ const Home = ({handleNavbar}) => {
                         </div>
                     </div>
                     <div className=''>
-                        <ul className='font-medium text-lg text-white list-disc'>
+                        <ul className='font-medium text-lg text-white mt-9 lg:mt-0 list-disc'>
                             <li>Seed - 5.5%</li>
                             <li>Private - 9.5%</li>
                             <li>Public - 4%</li>
@@ -104,7 +107,7 @@ const Home = ({handleNavbar}) => {
                             <li>Airdrop - 1%</li>
                         </ul>
                     </div>
-                    <div className='flex items-start mt-0 lg:-mt-24'>
+                    <div className='hidden lg:flex items-start mt-0 lg:-mt-24'>
                         <img src={ChartPie} alt="" width="100%"/>
                     </div>
                 </div>
