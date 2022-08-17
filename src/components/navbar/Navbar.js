@@ -60,7 +60,7 @@ const Navbar = () => {
                 </Link>
             </div>
              <div className='mt-0 flex lg:hidden' style={{position:'absolute', right:0}}>
-                <button onClick={handleShow}>
+                <button onClick={handleShow} >
                     <img src={Menu} width="50%" alt="Menu"/>
                 </button>
             </div>
