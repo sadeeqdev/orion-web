@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import orionLogo from '../../assets/img/Orion.svg'
+import orionLogo from '../../assets/img/Orion-logo.png'
 import Discord from '../../assets/img/Discord New.svg'
 import Email from '../../assets/img/Email Send.svg'
 import Github from '../../assets/img/GitHub.svg'
@@ -43,18 +43,18 @@ const SideBar = () => {
     <div>
         <div className='flex flex-row text-white justify-between lg:hidden' >
             <div className='mt-0 ' style={{}}>
-                <img src={orionLogo} alt="Logo" style={{display:show && 'none', margin:'30px 0 0px 20px'}}/>
+                <img src={orionLogo} alt="Logo" width="30%" style={{margin:'30px 0 0px 20px'}}/>
             </div>
-            <div className='mt-0' style={{}}>
+            <div className='mt-0 mr-6' style={{}}>
                 <button onClick={handleShow} className="mt-8">
-                    <img src={Menu} width="50%" alt="Menu"/>
+                    <img src={Menu} width="100%" alt="Menu" />
                 </button>
             </div>
         </div>
         <div className='bg-sub-dark shadow-2xl lg:flex flex-col mt-0 -ml-72 lg:ml-0 transition-all justify-between h-screen text-white fixed' style={{zIndex:999, transform:(mobile && show)  && 'translateX(288px)', position:mobile && 'fixed', top: mobile && 0 }}>
             <div className='grid grid-cols-1 px-6 lg:px-14 gap-y-16 w-72  lg:w-80 2xl:w-96 place-items-center'>
-                <div className='mt-12 lg:mt-20'>
-                    <img src={orionLogo} alt="Logo"/>
+                <div className='mt-12 lg:mt-20 flex justify-center'>
+                    <img src={orionLogo} width="60%" alt="Logo"/>
                 </div>
                 <div className='space-y-4 w-full grid grid-cols-1 '>
                     <button className='bg-green  py-2 hover:bg-greentext' style={{boxShadow:'0px 4px 9px rgba(6, 188, 95, 0.56), inset 0px 4px 20px rgba(182, 250, 215, 0.5)'}}>Total Liquidity Raised: $0.00</button>

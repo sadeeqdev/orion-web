@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import OrionDark from '../../assets/img/Orion-dark.png'
+import OrionDark from '../../assets/img/ORION-Dark.svg'
 import Earth from '../../assets/img/Earth Globe.svg'
 import Email from '../../assets/img/Email.svg'
 import Meduim from '../../assets/img/Medium Monogram.svg'
