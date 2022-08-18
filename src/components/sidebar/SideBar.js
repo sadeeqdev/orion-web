@@ -21,10 +21,10 @@ const SideBar = () => {
     }
 
     function checkWindow(){
-        if(window.innerWidth > 800 ){
+        if(window.innerWidth > 850 ){
             setShow(true)
             setMobile(false)
-        }else if(window.innerWidth < 800 ){
+        }else if(window.innerWidth < 850 ){
             setShow(false)
             setMobile(true)
         }
@@ -34,17 +34,17 @@ const SideBar = () => {
 
   return (
     <div>
-        <div className='flex flex-row text-white  justify-between lg:hidden'>
-            <div className='mt-6 ml-5'>
-                <img src={orionLogo} alt="Logo"/>
+        <div className='flex flex-row text-white justify-between lg:hidden' >
+            <div className='mt-0 '>
+                <img src={orionLogo} alt="Logo" style={{display:show && 'none', padding:'20px 0 0 20px'}}/>
             </div>
-            <div className='mt-5' style={{position:'absolute', right:0}}>
-                <button onClick={handleShow}>
+            <div className='mt-0' style={{position:'absolute', right:0}}>
+                <button onClick={handleShow} className="mt-5">
                     <img src={Menu} width="50%" alt="Menu"/>
                 </button>
             </div>
         </div>
-        <div className='bg-sub-dark shadow-2xl lg:flex flex-col -mt-12 lg:mt-0 -ml-72 lg:ml-0 transition-all justify-between h-full text-white fixed' style={{zIndex:999, transform:(mobile && show)  && 'translateX(288px)'}}>
+        <div className='bg-sub-dark shadow-2xl lg:flex flex-col mt-0 -ml-72 lg:ml-0 transition-all justify-between h-full text-white fixed' style={{zIndex:999, transform:(mobile && show)  && 'translateX(288px)'}}>
             <div className='grid grid-cols-1 px-6 lg:px-14 gap-y-16 w-72  lg:w-80 2xl:w-96 place-items-center'>
                 <div className='mt-12 lg:mt-20'>
                     <img src={orionLogo} alt="Logo"/>
