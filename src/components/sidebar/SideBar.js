@@ -42,16 +42,16 @@ const SideBar = () => {
   return (
     <div>
         <div className='flex flex-row text-white justify-between lg:hidden' >
-            <div className='mt-0 ' style={{position: 'absolute'}}>
-                <img src={orionLogo} alt="Logo" style={{display:show && 'none', margin:'30px 0 10px 20px'}}/>
+            <div className='mt-0 ' style={{}}>
+                <img src={orionLogo} alt="Logo" style={{display:show && 'none', margin:'30px 0 0px 20px'}}/>
             </div>
-            <div className='mt-0' style={{position:'absolute', right:0}}>
+            <div className='mt-0' style={{}}>
                 <button onClick={handleShow} className="mt-8">
                     <img src={Menu} width="50%" alt="Menu"/>
                 </button>
             </div>
         </div>
-        <div className='bg-sub-dark shadow-2xl lg:flex flex-col mt-0 -ml-72 lg:ml-0 transition-all justify-between h-full text-white fixed' style={{zIndex:999, transform:(mobile && show)  && 'translateX(288px)'}}>
+        <div className='bg-sub-dark shadow-2xl lg:flex flex-col mt-0 -ml-72 lg:ml-0 transition-all justify-between h-screen text-white fixed' style={{zIndex:999, transform:(mobile && show)  && 'translateX(288px)'}}>
             <div className='grid grid-cols-1 px-6 lg:px-14 gap-y-16 w-72  lg:w-80 2xl:w-96 place-items-center'>
                 <div className='mt-12 lg:mt-20'>
                     <img src={orionLogo} alt="Logo"/>

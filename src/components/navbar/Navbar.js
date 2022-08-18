@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <div className='bg-navbar'>
-        <div className='fixed w-72 -ml-72 bg-sub-dark h-full transition-all' style={{zIndex:999, transform:(mobile && show)  && 'translateX(288px)'}}>
+        <div className='fixed w-72 -ml-72 bg-sub-dark h-screen transition-all' style={{zIndex:999, transform:(mobile && show)  && 'translateX(288px)', backdropFilter: 'blur(15px)'}}>
             <div className=' text-white pt-12 pb-7 w-11/12  lg:pt-28 lg:py-7 lg:w-5/6 2xl:w-4/6 mx-auto grid grid-cols-1 place-items-center justify-between'>
                 <div>
                     <img src={orionLogo} alt="Logo"/>
