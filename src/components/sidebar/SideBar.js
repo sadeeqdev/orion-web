@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import orionLogo from '../../assets/img/Orion.svg'
 import Discord from '../../assets/img/Discord New.svg'
@@ -20,6 +20,12 @@ const SideBar = () => {
         setShow(!show)
     }
 
+    useEffect(() => {
+        if(window.innerWidth < 850 ){
+            setMobile(true)
+        }
+    },[])
+
     function checkWindow(){
         if(window.innerWidth > 850 ){
             setShow(true)
@@ -35,11 +41,11 @@ const SideBar = () => {
   return (
     <div>
         <div className='flex flex-row text-white justify-between lg:hidden' >
-            <div className='mt-0 '>
-                <img src={orionLogo} alt="Logo" style={{display:show && 'none', padding:'20px 0 0 20px'}}/>
+            <div className='mt-0 ' style={{position: 'absolute'}}>
+                <img src={orionLogo} alt="Logo" style={{display:show && 'none', padding:'30px 0 10px 20px'}}/>
             </div>
             <div className='mt-0' style={{position:'absolute', right:0}}>
-                <button onClick={handleShow} className="mt-5">
+                <button onClick={handleShow} className="mt-8">
                     <img src={Menu} width="50%" alt="Menu"/>
                 </button>
             </div>

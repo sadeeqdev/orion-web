@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import orionLogo from '../../assets/img/Orion.svg'
 import Menu from '../../assets/img/Menu-2.png'
@@ -10,6 +10,13 @@ const Navbar = () => {
     function handleShow(){
         setShow(!show)
     }
+
+    useEffect(() => {
+        if(window.innerWidth < 850 ){
+            setShow(false)
+            setMobile(true)
+        }
+    },[])
 
     function checkWindow(){
         if(window.innerWidth > 800 ){
