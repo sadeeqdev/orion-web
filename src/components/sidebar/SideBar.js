@@ -19,12 +19,13 @@ const SideBar = () => {
     function handleShow(){
         setShow(!show)
     }
-
+    
+    /* eslint-disable */
     useEffect(() => {
         if(window.innerWidth < 850 ){
             setMobile(true)
         }
-    },[])
+    })
 
     function checkWindow(){
         if(window.innerWidth > 850 ){

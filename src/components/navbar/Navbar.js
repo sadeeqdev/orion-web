@@ -11,12 +11,12 @@ const Navbar = () => {
         setShow(!show)
     }
 
+    /* eslint-disable */
     useEffect(() => {
         if(window.innerWidth < 850 ){
-            setShow(false)
             setMobile(true)
         }
-    },[])
+    })
 
     function checkWindow(){
         if(window.innerWidth > 800 ){
@@ -37,7 +37,7 @@ const Navbar = () => {
                 <div>
                     <img src={orionLogo} alt="Logo"/>
                 </div>
-                <div className='font-medium grid text-xl gap-y-5 mt-9 text-center'>
+                <div className='font-medium grid text-xl gap-y-5 mt-9 text-center' onClick={() => setShow(false)}>
                     <NavLink to="/home" className="hover:text-greentext" >Home</NavLink>
                     <NavLink to="/tokenclaim" className="hover:text-greentext">Token Claim</NavLink>
                     <NavLink to="/home" className="hover:text-greentext">IDO Pool</NavLink>
@@ -54,7 +54,7 @@ const Navbar = () => {
             <div>
                 <img src={orionLogo} alt="Logo"/>
             </div>
-            <div className='space-x-8 font-medium hidden lg:flex '>
+            <div className='space-x-8 font-medium hidden lg:flex ' >
                 <NavLink to="/home" className="hover:text-greentext" >Home</NavLink>
                 <NavLink to="/tokenclaim" className="hover:text-greentext">Token Claim</NavLink>
                 <NavLink to="/home" className="hover:text-greentext">IDO Pool</NavLink>
