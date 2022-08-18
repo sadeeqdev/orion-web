@@ -43,7 +43,7 @@ const SideBar = () => {
     <div>
         <div className='flex flex-row text-white justify-between lg:hidden' >
             <div className='mt-0 ' style={{position: 'absolute'}}>
-                <img src={orionLogo} alt="Logo" style={{display:show && 'none', padding:'30px 0 10px 20px'}}/>
+                <img src={orionLogo} alt="Logo" style={{display:show && 'none', margin:'30px 0 10px 20px'}}/>
             </div>
             <div className='mt-0' style={{position:'absolute', right:0}}>
                 <button onClick={handleShow} className="mt-8">
