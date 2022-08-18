@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import orionLogo from '../../assets/img/Orion-logo.png'
-import Discord from '../../assets/img/Discord New.svg'
-import Email from '../../assets/img/Email Send.svg'
-import Github from '../../assets/img/GitHub.svg'
-import Twitter from '../../assets/img/Twitter.svg'
-import Downloads from '../../assets/img/Downloads Folder.svg'
-import Gold from '../../assets/img/Gold Bars.svg'
-import Layers from '../../assets/img/Layers.svg'
-import Document from '../../assets/img/Sign Document.svg'
+import Discord from '../../assets/img/Discord New.png'
+import Email from '../../assets/img/Email Send.png'
+import Github from '../../assets/img/GitHub.png'
+import Twitter from '../../assets/img/Twitter.png'
+import Downloads from '../../assets/img/Downloads Folder.png'
+import Gold from '../../assets/img/Gold Bars.png'
+import Layers from '../../assets/img/Layers.png'
+import Document from '../../assets/img/Sign Document.png'
 import Menu from '../../assets/img/Menu-2.png'
 
 const SideBar = () => {
@@ -62,27 +62,27 @@ const SideBar = () => {
                     <button className='bg-green py-2 hover:bg-greentext' style={{boxShadow:'0px 4px 9px rgba(6, 188, 95, 0.56), inset 0px 4px 20px rgba(182, 250, 215, 0.5)'}}>Total Participants: 0</button>
                 </div>
                 <div className='gap-y-2 w-full grid grid-cols-1'>
-                    <button className='border w-full border-green bg-btn-dark py-2 px-5 text-left hover:bg-greentext flex justify-between' style={{boxShadow:'0px 4px 9px rgba(6, 188, 95, 0.56)'}}><span>IDO</span><img src={Layers} alt="Icon" className='mt-1'/></button>
-                    <button className='border border-greentext py-2 px-5 text-left hover:bg-greentext mt-4 flex justify-between' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>$Orion Staking<img src={Gold} alt="Icon" className='mt-1'/></button>
+                    <button className='border w-full border-green bg-btn-dark py-2 px-5 text-left hover:bg-greentext flex justify-between' style={{boxShadow:'0px 4px 9px rgba(6, 188, 95, 0.56)'}}><span>IDO</span><img src={Layers} width="7%" alt="Icon" className='mt-1'/></button>
+                    <button className='border border-greentext py-2 px-5 text-left hover:bg-greentext mt-4 flex justify-between' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>$Orion Staking<img src={Gold} width="7%" alt="Icon" className='mt-1'/></button>
                 </div>
                 <div className='gap-y-2 w-full grid grid-cols-1'>
-                    <button className='border border-greentext py-2 px-5 text-left hover:bg-greentext flex justify-between' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>Doc<img src={Document} alt="Icon" className='mt-1'/></button>
-                    <button className='border border-greentext py-2 px-5 text-left hover:bg-greentext mt-2 flex justify-between' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>Apply for IDO <img src={Downloads} alt="Icon" className='mt-1'/></button>
+                    <button className='border border-greentext py-2 px-5 text-left hover:bg-greentext flex justify-between' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>Doc<img src={Document} alt="Icon" width="7%" className='mt-1'/></button>
+                    <button className='border border-greentext py-2 px-5 text-left hover:bg-greentext mt-2 flex justify-between' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>Apply for IDO <img src={Downloads} width="7%"alt="Icon" className='mt-1'/></button>
                 </div>
             </div>
             <div className='lg:w-80 2xl:w-96 py-8 px-10 bg-dashFooter hidden lg:flex justify-center self-bottom'>
-                <div className='space-x-9 flex mt-5'>
+                <div className='space-x-2 flex mt-5'>
                     <NavLink to="/home" className="hover:scale-110" >
-                        <img src={Email} alt="Logo"/>
+                        <img src={Email} width="50%" alt="Logo"/>
                     </NavLink>
                     <NavLink to="/home" className="hover:scale-110">
-                        <img src={Twitter} alt="Logo"/>
+                        <img src={Twitter} width="50%" alt="Logo"/>
                     </NavLink>
                     <NavLink to="/home" className="hover:scale-110">
-                        <img src={Discord} alt="Logo"/>
+                        <img src={Discord} width="50%" alt="Logo"/>
                     </NavLink>
                     <NavLink to="/home" className="hover:scale-110">
-                        <img src={Github} alt="Logo"/>
+                        <img src={Github} width="50%" alt="Logo"/>
                     </NavLink>
                 </div>
             </div>

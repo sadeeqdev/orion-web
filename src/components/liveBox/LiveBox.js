@@ -1,10 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import OrionDark from '../../assets/img/Orion-dark.png'
-import Earth from '../../assets/img/Earth Globe.svg'
-import Email from '../../assets/img/Email.svg'
-import Meduim from '../../assets/img/Medium Monogram.svg'
-import Twitter from '../../assets/img/Twitter .svg'
+import Earth from '../../assets/img/Earth Globe.png'
+import Email from '../../assets/img/Email.png'
+import Meduim from '../../assets/img/Medium Monogram.png'
+import Twitter from '../../assets/img/Twitter .png'
 import OrionBg from '../../assets/img/CircleBorder.svg'
 
 const LiveBox = () => {
@@ -28,20 +28,20 @@ const LiveBox = () => {
                 <img src={OrionDark} alt="Orion" className='ml-1.5 mt-0.5'/>
             </div>
             <div className=' w-2/4 flex justify-end mt-2'>
-                <div>
+                <div className='text-center self-start'>
                     <h2 className='text-white font-bold text-3xl mt-5 text-center'>Orion</h2>
                     <p className='mt-2 text-xl font-bold text-center'>11th August 2022 1200 UTC</p>
-                    <div className='space-x-3 flex mt-10 justify-center text-center'>
-                        <NavLink to="/home" className="hover:scale-110" >
+                    <div className='space-x-4 flex mt-4 lg:mt-9 justify-center text-center w-3/4 mx-auto'>
+                        <NavLink to="/home" style={{width:'12%'}} className="hover:scale-110" >
                             <img src={Earth} alt="Logo"/>
                         </NavLink>
-                        <NavLink to="/home" className="hover:scale-110">
+                        <NavLink to="/home" style={{width:'12%'}} className="hover:scale-110">
                             <img src={Email} alt="Logo"/>
                         </NavLink>
-                        <NavLink to="/home" className="hover:scale-110">
+                        <NavLink to="/home" style={{width:'12%'}} className="hover:scale-110">
                             <img src={Twitter} alt="Logo"/>
                         </NavLink>
-                        <NavLink to="/home" className="hover:scale-110">
+                        <NavLink to="/home" style={{width:'12%'}} className="hover:scale-110">
                             <img src={Meduim} alt="Logo"/>
                         </NavLink>
                     </div>

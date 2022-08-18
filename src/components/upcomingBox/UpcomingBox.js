@@ -1,10 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import OrionDark from '../../assets/img/Orion-dark.png'
-import Earth from '../../assets/img/Earth Globe.svg'
-import Email from '../../assets/img/Email.svg'
-import Meduim from '../../assets/img/Medium Monogram.svg'
-import Twitter from '../../assets/img/Twitter .svg'
+import Earth from '../../assets/img/Earth Globe.png'
+import Email from '../../assets/img/Email.png'
+import Meduim from '../../assets/img/Medium Monogram.png'
+import Twitter from '../../assets/img/Twitter .png'
 import Star from '../../assets/img/Star.svg'
 
 const UpcomingBar = () => {
@@ -24,18 +24,18 @@ const UpcomingBar = () => {
             <div className='ml-7 lg:ml-11 w-3/5 lg:w-2/5 mt-2'>
                 <h2 className='text-white font-bold text-3xl'>Orion</h2>
                 <p className='mt-2'>First decentralized fund raising platform on Aptos</p>
-                 <div className='space-x-3 flex mt-5'>
+                 <div className='flex -space-x-5 mt-5 w-3/4'>
                     <NavLink to="/home" className="hover:scale-110" >
-                        <img src={Earth} alt="Logo"/>
+                        <img src={Earth} width="40%" alt="Logo"/>
                     </NavLink>
                     <NavLink to="/home" className="hover:scale-110">
-                        <img src={Email} alt="Logo"/>
+                        <img src={Email} width="40%" alt="Logo"/>
                     </NavLink>
                     <NavLink to="/home" className="hover:scale-110">
-                        <img src={Twitter} alt="Logo"/>
+                        <img src={Twitter} width="40%" alt="Logo"/>
                     </NavLink>
                     <NavLink to="/home" className="hover:scale-110">
-                        <img src={Meduim} alt="Logo"/>
+                        <img src={Meduim} width="40%" alt="Logo"/>
                     </NavLink>
                 </div>
             </div>
