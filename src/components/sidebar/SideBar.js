@@ -51,7 +51,7 @@ const SideBar = () => {
                 </button>
             </div>
         </div>
-        <div className='bg-sub-dark shadow-2xl lg:flex flex-col mt-0 -ml-72 lg:ml-0 transition-all justify-between h-screen text-white fixed' style={{zIndex:999, transform:(mobile && show)  && 'translateX(288px)'}}>
+        <div className='bg-sub-dark shadow-2xl lg:flex flex-col mt-0 -ml-72 lg:ml-0 transition-all justify-between h-screen text-white fixed' style={{zIndex:999, transform:(mobile && show)  && 'translateX(288px)', position:mobile && 'fixed', top: mobile && 0 }}>
             <div className='grid grid-cols-1 px-6 lg:px-14 gap-y-16 w-72  lg:w-80 2xl:w-96 place-items-center'>
                 <div className='mt-12 lg:mt-20'>
                     <img src={orionLogo} alt="Logo"/>
