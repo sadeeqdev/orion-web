@@ -51,7 +51,7 @@ const Navbar = () => {
             </div>
         </div>
         <div className=' text-white pt-12 pb-7 w-11/12  lg:pt-28 lg:py-7 lg:w-5/6 2xl:w-4/6 mx-auto flex justify-between'>
-            <div style={{width:'20%'}}>
+            <div>
                 <img src={orionLogo} width="20%" alt="Logo"/>
             </div>
             <div className='space-x-8 font-medium hidden lg:flex ' >
