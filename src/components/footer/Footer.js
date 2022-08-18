@@ -14,8 +14,8 @@ const Footer = () => {
                 <div className='flex justify-center text-center'>
                     <img src={orionLogo} alt="Logo" style={{width:'250px'}}/>
                 </div>
-                <div className='flex mt-10 lg:w-1/4 lg:mt-0 font-medium self-end'>
-                    <div className='space-x-10 flex'>
+                <div className='flex mt-10 w-5/6 mx-auto lg:w-1/4 lg:mt-0 font-medium lg:self-end'>
+                    <div className='space-x-5 justify-center lg:space-x-10 flex'>
                         <NavLink to="/home" style={{width:'15%'}} className="hover:scale-110" >
                             <img src={Email} alt="Logo"/>
                         </NavLink>
