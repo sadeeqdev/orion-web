@@ -22,19 +22,19 @@ const SideBar = () => {
     
     /* eslint-disable */
     useEffect(() => {
-        if(window.innerWidth < 850 ){
+        if(window.innerWidth < 1030 ){
             setMobile(true)
         }
     })
 
     function checkWindow(){
-        if(window.innerWidth > 850 ){
+        if(window.innerWidth > 1030 ){
             setShow(true)
             setMobile(false)
-        }else if(window.innerWidth < 850 ){
+        }else if(window.innerWidth < 1030 ){
             setShow(false)
             setMobile(true)
-        }
+        }  
     }
 
     window.onresize = checkWindow
