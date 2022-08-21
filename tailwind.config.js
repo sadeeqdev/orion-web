@@ -23,7 +23,9 @@ module.exports = {
       'greenshadow': 'rgba(182, 250, 215, 0.21);',
       'blueshadow': 'rgba(182, 250, 215, 0.21);',
       'yellowshadow':'rgba(182, 250, 215, 0.21);',
-      'dashFooter': '#555555'
+      'dashFooter': '#555555',
+      'red': '#990d0d',
+      'redHover':'#d40d0d'
     },
     screens: {
       'sm': '640px',
@@ -35,7 +37,7 @@ module.exports = {
       'lg': '1030px',
       // => @media (min-width: 1024px) { ... }
 
-      'xl': '1280px',
+      'xl': '1555px',
       // => @media (min-width: 1280px) { ... }
 
       '2xl': '1700px',

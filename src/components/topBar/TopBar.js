@@ -18,7 +18,7 @@ const TopBar = () => {
 
   return (
     <div className='w-1/1'>
-        <div className='w-1/1 px-5 max-auto lg:max-w text-white mt-8 lg:mt-16 lg:px-12 mx-auto flex flex-col-reverse lg:flex-row lg:justify-between'>
+        <div className='w-1/1 px-5 max-auto lg:max-w text-white mt-8 lg:mt-16 lg:px-12 lg:ml-5 xl:ml-0 mx-auto flex flex-col-reverse lg:flex-row lg:justify-between'>
             <div className='flex space-x-2 lg:space-x-8 font-medium'>
                 <Link to="/dashboard/live">
                     <button className='px-9 py-2 hover:bg-greentext' onClick={handleActiveLive} style={{border:active ? '1px solid #0E9E55' : 'none', boxShadow:active ? '0px 2px 5px rgba(182, 250, 215, 0.5)' : 'none'}}>Live</button>

@@ -17,7 +17,7 @@ const LiveBox = () => {
             borderImage: 'linear-gradient(90deg, black, white)',
             border: '1px solid transparent'
         }}>
-        <div className='flex justify-between px-4 lg:px-14'>
+        <div className='flex justify-between px-4 xl:px-14'>
             <p className='text-white text-xl mt-2 '>
                 Ended
             </p>
@@ -48,12 +48,12 @@ const LiveBox = () => {
                 </div>
             </div>
         </div>
-        <div className='px-3 lg:px-10'>
+        <div className='px-3 lg:px-6'>
             <p className='flex justify-center mt-4 text-lg'>Contribution Range</p>
             <div className='flex justify-between mt-2 space-x-4'>
-                <button className='w-full lg:w-auto border border-greentext py-2 lg:px-10 text-center hover:bg-greentext mt-2' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}> 100 APTOS</button>
+                <button className='w-full lg:w-1/3 border border-greentext py-2 text-center hover:bg-greentext mt-2' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}> 100 APTOS</button>
                     <p className='items-center flex text-lg'>To</p>
-                <button className='w-full lg:w-auto border border-greentext py-2 lg:px-10 text-center hover:bg-greentext mt-2 ml-3' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>1000 APTOS</button>
+                <button className='w-full lg:w-1/3 border border-greentext py-2 text-center hover:bg-greentext mt-2 ml-3' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>1000 APTOS</button>
             </div>
         </div>
     </div>
