@@ -37,10 +37,10 @@ module.exports = {
       'lg': '1030px',
       // => @media (min-width: 1024px) { ... }
 
-      'xl': '1555px',
+      'xl': '1400px',
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1700px',
+      '2xl': '1600px',
       // => @media (min-width: 1536px) { ... }
     },
     extend: {},

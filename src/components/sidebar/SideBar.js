@@ -64,7 +64,7 @@ const SideBar = () => {
                     X
                 </button>
             </div>
-            <div className='grid grid-cols-1 px-6 xl:px-14 gap-y-12 w-72 xl:w-96 place-items-center'>
+            <div className='grid grid-cols-1 px-6 2xl:px-14 gap-y-12 w-72 2xl:w-96 place-items-center'>
                 <div className='mt-3 xl:mt-28 flex justify-center'>
                     <img src={orionLogo} width="60%" alt="Logo"/>
                 </div>
@@ -82,7 +82,7 @@ const SideBar = () => {
                     <button className='border border-greentext py-2 px-5 text-left hover:bg-greentext mt-2 flex justify-between' style={{boxShadow:'0px 1px 5px rgba(182, 250, 215, 0.5)'}}>Apply for IDO <img src={Downloads} width="7%"alt="Icon" className='mt-1'/></button>
                 </div>
             </div>
-            <div className='lg:w-72 xl:w-96 py-8 px-10 bg-dashFooter hidden xl:flex justify-center self-bottom'>
+            <div className='lg:w-72 2xl:w-96 py-8 px-10 bg-dashFooter hidden xl:flex justify-center self-bottom'>
                 <div className='space-x-2 flex mt-5'>
                     <NavLink to="/home" className="hover:scale-110" >
                         <img src={Email} width="50%" alt="Logo"/>
